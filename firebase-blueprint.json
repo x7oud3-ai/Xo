@@ -1,0 +1,56 @@
+{
+  "entities": {
+    "users": {
+      "title": "User Profiles",
+      "description": "User profile with stats and achievements",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "username": { "type": "string" },
+        "usernameLower": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "bio": { "type": "string" },
+        "points": { "type": "number" },
+        "wins": { "type": "number" },
+        "losses": { "type": "number" },
+        "draws": { "type": "number" },
+        "isOnline": { "type": "boolean" },
+        "achievements": { "type": "array", "items": { "type": "string" } }
+      },
+      "required": ["uid", "email", "username"]
+    },
+    "gameRooms": {
+      "title": "Game Rooms",
+      "description": "Online Tic-Tac-Toe rooms",
+      "properties": {
+        "id": { "type": "string" },
+        "hostId": { "type": "string" },
+        "status": { "type": "string" },
+        "board": { "type": "array", "items": { "type": "string" } }
+      },
+      "required": ["hostId", "status", "board"]
+    },
+    "invitations": {
+      "title": "Game Invitations",
+      "description": "Invitations sent between users",
+      "properties": {
+        "fromUid": { "type": "string" },
+        "toUid": { "type": "string" },
+        "roomId": { "type": "string" },
+        "status": { "type": "string" }
+      },
+      "required": ["fromUid", "toUid", "roomId", "status"]
+    },
+    "friendships": {
+      "title": "Friendships",
+      "description": "Friend connections",
+      "properties": {
+        "user1": { "type": "string" },
+        "user2": { "type": "string" },
+        "status": { "type": "string" }
+      },
+      "required": ["user1", "user2", "status"]
+    }
+  }
+}

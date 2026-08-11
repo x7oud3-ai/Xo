@@ -1,0 +1,6 @@
+{
+  "name": "لعبة X O أونلاين",
+  "description": "لعبة X / O تفاعلية أونلاين مع أصدقائك، ضد الكمبيوتر، أو محلياً مع نظام الحسابات، الغرف المباشرة، قائمة الأصدقاء ولوحة المتصدرين",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
